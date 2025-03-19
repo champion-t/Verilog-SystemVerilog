@@ -1,0 +1,14 @@
+module demux_1x4(
+    input           f,
+    input   [1:0]   sel,
+    output          a,
+    output          b,
+    output          c,
+    output          d
+);
+
+    assign a = f & ~sel[1] & ~sel[0];
+    assign b = f &  sel[1] & ~sel[0];
+    assign c = f & ~sel[1] &  sel[0];
+    assign d = f &  sel[1] &  sel[0];
+endmodule
