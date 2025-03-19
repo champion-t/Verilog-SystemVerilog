@@ -1,2 +1,2 @@
 # Verilog
-Simple Verilog
+Simple Verilog Example
